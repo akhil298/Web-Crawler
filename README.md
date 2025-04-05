@@ -21,8 +21,7 @@ The E-commerce Product URL Crawler is a web scraping tool designed to discover a
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/ecommerce-crawler.git
-   cd ecommerce-crawler
+   git clone https://github.com/akhil298/Web-Crawler.git
    ```
 
 2. **Install Dependencies:**
