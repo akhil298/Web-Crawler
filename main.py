@@ -57,9 +57,9 @@ def main(urls):
 
 if __name__ == "__main__":
     urls = [
-        # "https://www.virgio.com/",
+        "https://www.virgio.com/",
         "https://www.tatacliq.com/",
         "https://nykaafashion.com/",
-        # "https://www.westside.com/",
+        "https://www.westside.com/",
     ]
     main(urls)
