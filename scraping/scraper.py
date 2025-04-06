@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from config.config import SHOW_BROWSER, SCROLL_PAUSE_TIME, WAIT_TIME, MAX_SCROLLS
 
-def scroll_page(driver, scroll_percentage=0.70, max_scrolls=5):
+def scroll_page(driver, scroll_percentage=0.62, max_scrolls=5):
     for _ in range(max_scrolls):
         driver.execute_script(f"window.scrollBy(0, window.innerHeight * {scroll_percentage});")
         time.sleep(SCROLL_PAUSE_TIME)
