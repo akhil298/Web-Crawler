@@ -51,6 +51,10 @@ def main(urls):
                 status_log[-1][4] -= 1 
 
     save_status_to_csv(status_log, 'status_log.csv')
+
+    for domain, links in product_links_map.items():
+        product_links_map[domain] = list(set(links))
+
     with open('product_links.json', 'w', encoding='utf-8') as file:
         json.dump(product_links_map, file, indent=4)
     print("Product links saved to product_links.json.")
@@ -61,5 +65,6 @@ if __name__ == "__main__":
         "https://www.tatacliq.com/",
         "https://nykaafashion.com/",
         "https://www.westside.com/",
+        "https://www.bewakoof.com/" #for testing as it works for other website
     ]
     main(urls)
